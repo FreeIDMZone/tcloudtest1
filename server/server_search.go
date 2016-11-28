@@ -15,18 +15,8 @@ const searchConfigURL = "https://gist.githubusercontent.com/jpillora/4d945b46b30
 
 var currentConfig = defaultSearchConfig
 
-
-	defer resp.Body.Close()
-	newConfig, err := ioutil.ReadAll(resp.Body)
-	if err != nil {
-		return err
-	}
-	if bytes.Equal(currentConfig, newConfig) {
-		return nil //skip
-	}
-	if err := s.scraper.LoadConfig(newConfig); err != nil {
-		return err
-	}
+        
+       
 	s.state.SearchProviders = s.scraper.Config
 	s.state.Update()
 	log.Printf("Loaded new search providers")
