@@ -1,7 +1,5 @@
 package server
 
-const searchConfigURL = "https://gist.githubusercontent.com/jpillora/4d945b46b3025843b066adf3d685be6b/raw/scraper-config.json"
-
 //see github.com/jpillora/scraper for config specification
 //cloud-torrent uses "<id>-item" handlers
 var defaultSearchConfig = []byte(`{
