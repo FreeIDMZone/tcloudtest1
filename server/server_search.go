@@ -15,11 +15,7 @@ const searchConfigURL = "https://gist.githubusercontent.com/jpillora/4d945b46b30
 
 var currentConfig = defaultSearchConfig
 
-func (s *Server) fetchSearchConfig() error {
-	resp, err := http.Get(searchConfigURL)
-	if err != nil {
-		return err
-	}
+
 	defer resp.Body.Close()
 	newConfig, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
