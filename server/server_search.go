@@ -1,28 +1,6 @@
 package server
 
-import (
-	"bytes"
-	"io/ioutil"
-	"log"
-	"net/http"
-
-
-	
-)
-
 const searchConfigURL = "https://gist.githubusercontent.com/jpillora/4d945b46b3025843b066adf3d685be6b/raw/scraper-config.json"
-
-
-var currentConfig = defaultSearchConfig
-
-        
-       
-	s.state.SearchProviders = s.scraper.Config
-	s.state.Update()
-	log.Printf("Loaded new search providers")
-	currentConfig = newConfig
-	return nil
-}
 
 //see github.com/jpillora/scraper for config specification
 //cloud-torrent uses "<id>-item" handlers
