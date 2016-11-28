@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/FreeIDMZone/tcloud/tree/master/server"
+	"github.com/jpillora/cloud-torrent/server"
 	"github.com/jpillora/opts"
 )
 
