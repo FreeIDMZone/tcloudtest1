@@ -3,15 +3,15 @@ package main
 import (
 	"log"
 
-	"github.com/jpillora/cloud-torrent/server"
-	"github.com/jpillora/opts"
+	"github.com/FreeIDMZone/tcloud/server"
+	"github.com/FreeIDMZone/opts"
 )
 
 var VERSION = "0.0.0-src" //set with ldflags
 
 func main() {
 	s := server.Server{
-		Title:      "Cloud Torrent",
+		Title:      "Torrent Leecher By NRS Inc.
 		Port:       3000,
 		ConfigPath: "cloud-torrent.json",
 	}
