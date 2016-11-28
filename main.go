@@ -3,8 +3,8 @@ package main
 import (
 	"log"
 
-	"github.com/FreeIDMZone/tcloud/server"
-	"github.com/FreeIDMZone/opts"
+	"github.com/FreeIDMZone/tcloud/tree/master/server"
+	"github.com/jpillora/opts"
 )
 
 var VERSION = "0.0.0-src" //set with ldflags
