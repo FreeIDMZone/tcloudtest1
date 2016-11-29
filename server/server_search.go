@@ -14,16 +14,7 @@ const searchConfigURL = "https://gist.githubusercontent.com/jpillora/4d945b46b30
 func (s *Server) fetchSearchConfigLoop(){
 	} 
 
-	for {
-		if err := s.fetchSearchConfig(); err != nil {
-			//ignore error
-			time.Sleep(b.Duration())
-		} else {
-			//no errror - check again in half hour
-			time.Sleep(30 * time.Minute)
-			b.Reset()
-		}
-	}
+	
 }
 
 var currentConfig = defaultSearchConfig
