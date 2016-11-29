@@ -17,6 +17,10 @@ html, body {
 	margin: 10px auto;
 }
 
+#upload{
+    display:none
+}
+
 @media (max-width: 740px) {
     .cage {
 		margin: 10px;
