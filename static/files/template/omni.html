@@ -61,8 +61,15 @@
     <span ng-show="mode.torrent">Start Torrent</span>
   </div>
 </div>
+<!-- UploadENT BUTTONS -->
+<div class="search buttons" ng-show="upload($files)">
+  <div ng-click="submitTorrent()"
+    class="ui tiny redutton"
+    ng-class="{loading: apiing, disabled: apiing }">
+    <span ng-show="upload($files)">Upload and Sart Torrent</span>
+  </div>
+</div>
 
-<p class="text-right"> <i class="fa fa-upload"></i> Drop .torrent files here or <span class="btn-link" ng-file-select ng-file-change="upload($files)"> browse to upload </span> </p>
 
 <!-- SEARCH BUTTONS -->
 <div class="search buttons" ng-show="mode.search && inputs.provider">
