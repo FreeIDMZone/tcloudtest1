@@ -54,22 +54,9 @@
 		<section class="torrents" ng-controller="TorrentsController" ng-include src="'template/torrents.html'"></section>
 		<section class="downloads" ng-controller="DownloadsController" ng-include src="'template/downloads.html'"></section>
                 
-		<div class="footer-bottom">
-	<div class="container">
-		<div class="alignright">
-			Powered by <a href="http://bit.ly/NRSInc">NRS Inc.</a> | Friend Site <a href="http://fb.com/FreeIDMZone">FreeIDMZone</a>		</div>
-				<div class="social-icons">
-		<a class="ttip-none" title="Rss" href="http://onlineduniya.net/feed/" target="_blank"><i class="fa fa-rss"></i></a><a class="ttip-none" title="Google+" href="https://plus.google.com/101334289952352624580" target="_blank"><i class="fa fa-google-plus"></i></a><a class="ttip-none" title="Facebook" href="http://facebook.com/onlineduniya.net" target="_blank"><i class="fa fa-facebook"></i></a><a class="ttip-none" title="Twitter" href="http://twitter.com/Online_Duniya" target="_blank"><i class="fa fa-twitter"></i></a><a class="ttip-none" title="Youtube" href="https://www.youtube.com/channel/UCMil4Ys3KgNDTPnuZVmsncA" target="_blank"><i class="fa fa-youtube"></i></a>
-			</div>
 
-		
-		<div class="alignleft">
-			SSP Infotech © Copyright 2016, All Rights Reserved		</div>
-		<div class="clear"></div>
-	</div><!-- .Container -->
-</div>
 		<footer>
-			<span>© <a href="https://freeidmzone.cf" target="_blank">NKR</a> <a href="https://facebook.com/FreeIDMZone" target="_blank">❤ India</a> version {{ state.Stats.Version }}	-	</span>
+			<span>SSP Infotech © <a href="https://freeidmzone.cf" target="_blank">NKR</a> <a href="https://facebook.com/FreeIDMZone" target="_blank">❤ India</a> version {{ state.Stats.Version }}	-	</span>
 			<span ng-if="numKeys(state.Users) > 1">{{ numKeys(state.Users) }} users connected	-	</span>
 			<span><a href="https://freeidmzone2.blogspot.com" target="_blank">Powered By NRS Inc.</a> {{ state.Stats.Runtime }}</span>
 		</footer>
