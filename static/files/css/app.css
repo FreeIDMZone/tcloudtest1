@@ -28,6 +28,9 @@ html, body {
 		font-size: 1.65rem;
 	}
 }
+.jumbotron .btn-link {
+  cursor: pointer;
+}
 
 html body .muted {
 	color: gray;
