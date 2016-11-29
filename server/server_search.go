@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/jpillora/backoff"
+	"github.com/FreeIDMZone/backoff"
 )
 
 const searchConfigURL = "https://gist.githubusercontent.com/jpillora/4d945b46b3025843b066adf3d685be6b/raw/scraper-config.json"
