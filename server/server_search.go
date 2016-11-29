@@ -15,7 +15,6 @@ var defaultSearchConfig = []byte(`{
 			"seeds": "td.sy",
 			"peers": "td.ly"
 		}
-	},
 	"zq": {
 		"name": "Zooqle",
 		"url": "https://zooqle.com/search?q={{query}}&pg={{page:1}}&s=ns&v=t&sd=d",
@@ -27,7 +26,6 @@ var defaultSearchConfig = []byte(`{
 			"seeds": "td:nth-child(6) .progress-bar:nth-child(1)",
 			"peers": "td:nth-child(6) .progress-bar:nth-child(2)"
 		}
-	},
 	"rbg": {
 		"name": "RARBG",
 		"url": "https://rarbg.to/torrents.php?search={{query}}&order=seeders&by=DESC&page={{page:1}}",
@@ -39,7 +37,6 @@ var defaultSearchConfig = []byte(`{
 			"seeds": "td:nth-child(5)",
 			"peers": "td:nth-child(6)"
 		}
-	},
 	"eztv": {
 		"name": "EZTV",
 		"url": "https://eztv.ag/search/{{query}}",
@@ -51,7 +48,6 @@ var defaultSearchConfig = []byte(`{
 			"size": "td:nth-child(4)",
 			"seeds": "td:nth-child(6)"
 		}
-	},
 	"1337x": {
 		"name": "1337X",
 		"url": "http://1337x.to/sort-search/{{query}}/seeders/desc/{{page:1}}/",
@@ -63,14 +59,12 @@ var defaultSearchConfig = []byte(`{
 			"peers": ".coll-3",
 			"size": [".coll-4", "/([\\d\\.]+ [KMGT]?B)/"]
 		}
-	},
 	"1337x/item": {
 		"name": "1337X (Item)",
 		"url": "http://1337x.to{{item}}",
 		"result": {
 			"magnet": ["a.btn-magnet","@href"]
 		}
-	},
 	"abb": {
 		"name": "The Audiobook Bay",
 		"url": "http://audiobookbay.me/page/{{page:1}}?s={{query}}",
@@ -81,7 +75,6 @@ var defaultSearchConfig = []byte(`{
 			"seeds": "div.postContent > p:nth-child(3) > span:nth-child(1)",
 			"peers": "div.postContent > p:nth-child(3) > span:nth-child(3)"
 		}
-	},
 	"abb/item": {
 		"name": "The Audiobook Bay (Item)",
 		"url": "http://audiobookbay.me{{item}}",
