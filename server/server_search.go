@@ -1,15 +1,5 @@
 package server
 
-import (
-	"math"
-	"math/rand"
-	"time"
-	"bytes"
-	"io/ioutil"
-	"log"
-	"net/http"
-)
-
 //see github.com/jpillora/scraper for config specification
 //cloud-torrent uses "<id>-item" handlers
 var defaultSearchConfig = []byte(`{
