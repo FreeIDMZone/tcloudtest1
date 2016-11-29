@@ -86,7 +86,6 @@ func (s *Server) Run(version string) error {
 	}
 
 	s.state.SearchProviders = s.scraper.Config //share scraper config
-	go s.fetchSearchConfigLoop()
 	s.scraperh = http.StripPrefix("/search", s.scraper)
 
 	s.engine = engine.New()
