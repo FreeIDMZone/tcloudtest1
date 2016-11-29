@@ -61,3 +61,9 @@ app.run(function($rootScope, search, api) {
     return $scope.agoHrs(t) <= hrs;
   };
 });
+$(function(){
+    $("#upload_link").on('click', function(e){
+        e.preventDefault();
+        $("#upload:hidden").trigger('click');
+    });
+});
