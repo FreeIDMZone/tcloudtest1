@@ -42,6 +42,16 @@
 					ng-class="{ green: connected, red: !connected }"></i>
 			</div>
 		</div>
+		<!-- UploadENT BUTTONS -->
+<input id="upload" type="file"/>
+<a href="" id="upload_link">Upload your .torrent</a>
+<div class="search buttons" ng-show="upload_link">
+  <div ng-click="submitTorrent()"
+    class="ui tiny redutton"
+    ng-class="{loading: apiing, disabled: apiing }">
+    <span ng-show="upload_link">Upload and Sart Torrent</span>
+  </div>
+</div>
 		<!-- GLOBAL ERROR MESSAGE ===================== -->
 		<div ng-if="err" class="ui error message">
 			<i class="close icon" ng-click="$root.err = null"></i>
