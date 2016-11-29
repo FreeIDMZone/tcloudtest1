@@ -13,6 +13,7 @@ const searchConfigURL = "https://gist.githubusercontent.com/jpillora/4d945b46b30
 
 func (s *Server) fetchSearchConfigLoop(){
 	} 
+
 	for {
 		if err := s.fetchSearchConfig(); err != nil {
 			//ignore error
