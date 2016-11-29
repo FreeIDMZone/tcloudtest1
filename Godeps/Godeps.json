@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/FreeIDMZone/tcloud",
+	"ImportPath": "github.com/jpillora/cloud-torrent",
 	"GoVersion": "go1.7",
 	"GodepVersion": "v74",
 	"Deps": [
