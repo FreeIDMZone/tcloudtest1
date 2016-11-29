@@ -11,15 +11,15 @@ import (
 const searchConfigURL = "https://gist.githubusercontent.com/jpillora/4d945b46b3025843b066adf3d685be6b/raw/scraper-config.json"
 
 func (s *Server) fetchSearchConfigLoop() {
-	b = time
+	
 	for {
 		if err := s.fetchSearchConfig(); err != nil {
 			//ignore error
-			time.Sleep(b.Duration())
+			time.Sleep(Duration())
 		} else {
 			//no errror - check again in half hour
 			time.Sleep(30 * time.Minute)
-			b.Reset()
+			Reset()
 		}
 	}
 }
