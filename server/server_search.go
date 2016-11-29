@@ -1,13 +1,6 @@
 package server
 
 import (
-	"bytes"
-	"io/ioutil"
-	"log"
-	"net/http"
-	"time"
-
-import (
 	"math"
 	"math/rand"
 	"time"
