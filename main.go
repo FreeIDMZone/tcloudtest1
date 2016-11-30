@@ -11,7 +11,7 @@ var VERSION = "1.1.3-src" //set with ldflags
 
 func main() {
 	s := server.Server{
-		Title:      "NR"<font color="green">"S"</font><font color="orange">"SP"</font>" Torrent Leecher",
+		Title:      "NKR's Torrent Leecher",
 		Port:       3000,
 		ConfigPath: "cloud-torrent.json",
 	}
